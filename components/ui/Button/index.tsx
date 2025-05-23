@@ -23,6 +23,7 @@ export function Btn({
       size={size}
       variant={variant as MuiButtonProps["variant"]}
       disabled={isLoading || disabled}
+      className="!text-xs !uppercase"
       {...rest}
     >
       {children}

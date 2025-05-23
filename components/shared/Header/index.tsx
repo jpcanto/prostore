@@ -27,11 +27,11 @@ export const Header = () => {
         </div>
         <div className="space-x-2">
           <ThemeToggle />
-          <Btn variant="text">
+          <Btn size="large" variant="text">
             <ShoppingCartIcon className="w-4 h-4 mr-2" />
             Cart
           </Btn>
-          <Btn variant="contained">
+          <Btn size="large" variant="contained">
             <UserIcon className="w-4 h-4 mr-2" />
             Sign in
           </Btn>
