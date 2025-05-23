@@ -1,4 +1,3 @@
-import { Btn } from "@/components/ui/Button";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,5 +6,5 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  return <Btn label="Click me" color="primary" size="medium" />;
+  return <></>;
 }

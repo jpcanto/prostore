@@ -1,8 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { ShoppingCartIcon, UserIcon } from "lucide-react";
 import { Btn } from "@/components/ui/Button";
 import { APP_NAME } from "@/lib/constants";
+import { ThemeToggle } from "./theme-toggle";
 
 export const Header = () => {
   return (
@@ -23,16 +26,15 @@ export const Header = () => {
           </Link>
         </div>
         <div className="space-x-2">
-          <Btn
-            label="Cart"
-            variant="text"
-            leftIcon={<ShoppingCartIcon className="w-4 h-4" />}
-          />
-          <Btn
-            label="Sign in"
-            variant="text"
-            leftIcon={<UserIcon className="w-4 h-4" />}
-          />
+          <ThemeToggle />
+          <Btn variant="text">
+            <ShoppingCartIcon className="w-4 h-4 mr-2" />
+            Cart
+          </Btn>
+          <Btn variant="contained">
+            <UserIcon className="w-4 h-4 mr-2" />
+            Sign in
+          </Btn>
         </div>
       </div>
     </header>
